@@ -1,0 +1,38 @@
+GET http://localhost:3000/interventions/
+
+###
+
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/interventions/5dfa1071bb7acf37f4186679
+
+###
+
+
+POST http://localhost:3000/interventions/
+Content-Type: application/json
+
+{
+    "latitude": "42",
+    "longitude": "12",
+    "lieu": "tesstLIEU",
+    "equipe": "test"
+}
+
+### 
+
+DELETE http://localhost:3000/interventions/5dfa0ea224ad5c237862f559
+
+### 
+
+PATCH http://localhost:3000/interventions/5dfa0eaa24ad5c237862f55a
+Content-Type: application/json
+
+{
+    "latitude": "32.254",
+    "longitude": "145.1589",
+    "lieu": "tesstLIEU2",
+    "equipe": "equipe21"
+}
